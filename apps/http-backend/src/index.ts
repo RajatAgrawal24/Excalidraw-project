@@ -2,6 +2,7 @@ import express from "express";
 import jwt from "jsonwebtoken";
 import { JWT_SECRET } from "./config";
 import { middleware } from "./middleware";
+import { prismaClient } from "@repo/db/client"
 
 const app = express();
 const port = 3001;
